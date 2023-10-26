@@ -1,0 +1,12 @@
+var length = 12;
+var width = 12;
+var dimensions = length * width;
+var tile = 1;
+var totalTile = dimensions * tile;
+var tileBox = 12;
+var totalBox = totalTile / tileBox;
+var extra = 0.1;
+var totalExtra = totalBox * extra;
+var totalBoxes = totalExtra + tileBox;
+var totalBoxesRounded = Math.ceil(totalBoxes);
+console.log(totalBoxesRounded);

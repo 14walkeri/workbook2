@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 20rem;
+      }
+      .button-group {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      button {
+        padding-inline: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form>
+        <label for="number1Input">number 1</label>
+        <input type="number1Input" type="text" />
+
+        <label for="number2Input">number 2</label>
+        <input type="number2Input" type="text" />
+
+        <button type="button" onclick="onAddButtonClicked()">add</button>
+        <button type="button" onclick="onSubTractionClicked()">subtract</button>
+        <button typ>multiple</button>
+        <button>divide</button>
+      </form>
+    </main>
+    <script>
+      function onAddButtonClicked(params) {
+        // extract value convert to number
+        let number1 = Number(document.getElementById("number1Input").value);
+        let number2 = Number(document.getElementById("number2Input").value);
+        console.log(number1);
+      }
+      function onSubTractionClicked(params) {}
+    </script>
+  </body>
+</html>

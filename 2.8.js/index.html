@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Button</title>
+  </head>
+  <body>
+    <p>Name <input type="text" id="nameField" value="" /></p>
+    <p><input id="greetBtn" type="button" onclick="greet()" value="Greet the User" /></p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos autem aliquam in nesciunt modi ipsam iusto quidem
+      sequi dolorem ex commodi, temporibus vel. Placeat deserunt atque mollitia nisi rerum dolorem?
+    </p>
+    <script>
+      function greet() {
+        const nameField = document.getElementById("nameField");
+        let name = nameField.value;
+        window.alert("Hello " + name);
+      }
+    </script>
+  </body>
+</html>
